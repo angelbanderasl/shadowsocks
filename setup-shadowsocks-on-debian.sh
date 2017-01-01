@@ -95,4 +95,3 @@ ssserver -c /etc/shadowsocks.json -d start
 
 echo
 echo -e "Your shadowsocks config file is at: '/etc/shadowsocks.json', and your config is: \n$ss_config"
-
