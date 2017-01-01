@@ -5,7 +5,7 @@
 
 apt-get update
 
-apt-get install python-pip
+apt-get install python-pip -y
 pip install shadowsocks
 
 
@@ -32,8 +32,6 @@ ss_config="{
 # you won't see the newline characters.
 
 echo "$ss_config" > /etc/shadowsocks.json
-
-echo -e "Your shadowsocks config file is at: '/etc/shadowsocks.json', and your config is: \n$ss_config"
 
 
 ########## Optimizing Shadowsocks ##########
@@ -94,3 +92,7 @@ sysctl --system
 # Start shadowsocks server at background
 # <https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File>
 ssserver -c /etc/shadowsocks.json -d start
+
+echo
+echo -e "Your shadowsocks config file is at: '/etc/shadowsocks.json', and your config is: \n$ss_config"
+
