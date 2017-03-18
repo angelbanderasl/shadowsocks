@@ -88,6 +88,7 @@ EOT
 
 sysctl --system
 
+ulimit -n 51200
 
 # Start shadowsocks server at background
 # <https://github.com/shadowsocks/shadowsocks/wiki/Configuration-via-Config-File>
