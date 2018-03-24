@@ -4,7 +4,7 @@
 # <https://github.com/shadowsocks/shadowsocks/blob/master/README.md>
 
 sudo apt-get update
-sudo apt-get install python-pip -y
+sudo apt-get install python3-pip -y
 sudo pip install -i https://pypi.python.org/simple/ --upgrade pip
 sudo pip install shadowsocks
 
@@ -17,13 +17,13 @@ sudo pip install shadowsocks
 ramdom_pass=$(LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -n 1)
 
 ss_config="{
-  \"server\":\"0.0.0.0\",
-  \"server_port\":8388,
+  \"server\":\"IP\",
+  \"server_port\":447,
   \"local_address\": \"127.0.0.1\",
   \"local_port\":1080,
-  \"password\":\"$ramdom_pass\",
+  \"password\":\"12345\",
   \"timeout\":300,
-  \"method\":\"rc4-md5\",
+  \"method\":\"aes-256-cfb\",
   \"fast_open\": false
 }
 "
