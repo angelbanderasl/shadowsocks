@@ -4,7 +4,7 @@
 # <https://github.com/shadowsocks/shadowsocks/blob/master/README.md>
 
 sudo apt-get update
-sudo apt-get install python3-pip -y
+sudo apt-get install python-pip -y
 sudo pip install -i https://pypi.python.org/simple/ --upgrade pip
 sudo pip install shadowsocks
 
