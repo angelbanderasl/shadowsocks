@@ -17,7 +17,7 @@ sudo pip install shadowsocks
 ramdom_pass=$(LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -n 1)
 
 ss_config="{
-  \"server\":\"IP\",
+  \"server\":\"159.89.82.222\",
   \"server_port\":447,
   \"local_address\": \"127.0.0.1\",
   \"local_port\":1080,
