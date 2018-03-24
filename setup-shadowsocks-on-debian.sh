@@ -3,10 +3,10 @@
 ########## Install Shadowsocks ##########
 # <https://github.com/shadowsocks/shadowsocks/blob/master/README.md>
 
-apt-get update
+sudo apt-get update
 
-apt-get install python-pip -y
-pip install shadowsocks
+sudo apt-get install python-pip -y
+sudo pip install shadowsocks
 
 
 ########## Setup Shadowsocks ##########
