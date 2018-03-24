@@ -4,8 +4,7 @@
 # <https://github.com/shadowsocks/shadowsocks/blob/master/README.md>
 
 echo -e "\033[1;31mPara que la instalacion sea correcta se necesita una ip.
-Digite su ip !\033[0m"
-read -p ": " ip
+Digite su ip !\033[0m"; read -p " " ip
 clear
 sudo apt-get update
 sudo apt-get install python-pip -y
