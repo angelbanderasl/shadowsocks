@@ -18,7 +18,7 @@ ramdom_pass=$(LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -
 
 ss_config="{
   \"server\":\"159.89.82.222\",
-  \"server_port\":447,
+  \"server_port\":8095,
   \"local_address\": \"127.0.0.1\",
   \"local_port\":1080,
   \"password\":\"12345\",
