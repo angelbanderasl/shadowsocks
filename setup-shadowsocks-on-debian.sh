@@ -3,11 +3,6 @@
 ########## Install Shadowsocks ##########
 # <https://github.com/shadowsocks/shadowsocks/blob/master/README.md>
 
-echo -e "\033[1;31mPara que la instalacion sea correcta se necesita una ip.
-Digite su ip !\033[0m"
-read -p ": " ip
-Digite su ip !\033[0m"; read -p " " ip
-clear
 sudo apt-get update
 sudo apt-get install python-pip -y
 sudo pip install -i https://pypi.python.org/simple/ --upgrade pip
@@ -22,8 +17,8 @@ sudo pip install shadowsocks
 ramdom_pass=$(LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -n 1)
 
 ss_config="{
-  \"server\":\"$ip\",
-  \"server_port\":8095,
+  \"server\":\"159.89.82.222\",
+  \"server_port\":447,
   \"local_address\": \"127.0.0.1\",
   \"local_port\":1080,
   \"password\":\"12345\",
